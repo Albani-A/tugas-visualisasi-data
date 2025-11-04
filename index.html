@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Visualisasi Data - VGSales (Trimmed)</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+</head>
+<body>
+
+    <h1>Dashboard Visualisasi Penjualan Video Game</h1>
+    <p style="text-align: center;">(Menggunakan data 8000 baris)</p>
+
+    <div class="chart-container">
+        <div class="chart-box">
+            <h2>10 Genre Terlaris (Global)</h2>
+            <canvas id="chart1"></canvas>
+            <p class="explanation">
+                Penjelasan: Grafik ini menunjukkan total penjualan global untuk 10 genre game teratas. Insight: Genre "Action" dan "Sports" mendominasi pasar secara signifikan.
+            </p>
+        </div>
+        
+        <div class="chart-box">
+            <h2>Tren Penjualan Global per Tahun</h2>
+            <canvas id="chart2"></canvas>
+            <p class="explanation">
+                Penjelasan: Grafik ini menunjukkan tren total penjualan game global dari tahun ke tahun. Insight: Puncak penjualan terjadi sekitar tahun 2008-2009.
+            </p>
+        </div>
+        
+        <div class="chart-box">
+            <h2>Komposisi Pasar Regional</h2>
+            <canvas id="chart3"></canvas>
+            <p class="explanation">
+                Penjelasan: Grafik ini menunjukkan persentase kontribusi penjualan dari setiap wilayah. Insight: Amerika Utara (NA) adalah pasar terbesar.
+            </p>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

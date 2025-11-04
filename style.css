@@ -1,0 +1,45 @@
+/* Pengaturan dasar */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #333;
+}
+p {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Membuat layout grid untuk container chart */
+.chart-container {
+    display: grid;
+    /* 1 kolom di HP, 3 kolom di desktop */
+    grid-template-columns: 1fr;
+    gap: 20px;
+    max-width: 1400px;
+    margin: auto;
+}
+
+.chart-box {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.explanation {
+    margin-top: 15px;
+}
+
+/* Kunci untuk Responsif */
+/* Jika layar lebih lebar dari 1024px, ubah jadi 3 kolom */
+@media (min-width: 1024px) {
+    .chart-container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
